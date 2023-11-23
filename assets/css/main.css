@@ -67,6 +67,14 @@ input, select, textarea {
 	appearance: none;
 }
 
+.custom_image{
+	left: 40% !important;
+	top: 55% !important;
+	transform: translate(-50%, -50%) !important;
+	height: auto !important;
+	width: auto !important;
+}
+
 /* Basic */
 
 	@-ms-viewport {
