@@ -75,11 +75,26 @@ input, select, textarea {
 	width: auto !important;
 }
 
+.custom_image_small{
+	display: none !important;
+}
+
 @media screen and (max-width: 600px){
  .custom_image{
 	width: 90% !important;
 	left: 50% !important;
 	top: 30% !important;
+ }
+
+ .custom_image_small{
+	display: block !important;
+	top: 40% !important;
+	left: 50% !important;
+	transform: translateX(-50%);
+}
+
+ .custom_image_large{
+	display: none !important;
  }
 }
 
