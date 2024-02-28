@@ -452,6 +452,63 @@ body {
   line-height: 2em;
 }
 
+.banner-container{
+  position: relative;
+  top: 60%;
+  width: 100%;
+  background:rgb(237, 237, 237);
+  height: auto;
+  padding: 2em;
+}
+
+.banner-container ul{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+
+.banner-btn a{
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 1.1em;
+}
+
+.banner-container li p{
+  font-size: 1.2em;
+}
+
+.banner-btn{
+  background:rgb(3, 118, 11);
+  padding: 1em;
+  border-radius: 40px;
+  margin-top: 1em;
+}
+
+.footer-container{
+  margin-top: 2em;
+  position: relative;
+  top: 70%;
+  height: 30vh;
+  background: #424242;
+  padding: 2em;
+}
+
+.footer-container h2{
+  color: whitesmoke;
+}
+
+.footer-container ul{
+  margin-top: 2em;
+  line-height: 2em;
+}
+
+.footer-container li a{
+  color: whitesmoke;
+  text-decoration: none;
+}
+
 
 @media only screen and (min-width: 700px){
   .card-container{
