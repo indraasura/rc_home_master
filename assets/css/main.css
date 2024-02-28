@@ -11,6 +11,11 @@
   justify-content: center;
   box-shadow: inset 0 -60px 0 -30px #424242;
 }
+
+ul{
+  list-style-type: none;
+}
+
 .buildings {
   height: 84.9673202614379px;
   width: 100%;
@@ -348,7 +353,7 @@ body {
 	margin: -.6px !important;
 	position: relative;
 	height: 100vh;
-	background: linear-gradient(to bottom, #424242, whitesmoke, whitesmoke)
+	background: linear-gradient(to bottom, #424242, whitesmoke, whitesmoke, whitesmoke, whitesmoke);
 }
 
 .about-us-wrapper h1{
@@ -387,6 +392,103 @@ body {
 	text-decoration: none;
 	text-align: match-parent;
 }
+
+.card-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: absolute;
+  height: 90%;
+  width: 80%;
+  top: 45%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 20px;
+}
+
+.card{
+  position: relative;
+  background: whitesmoke;
+  height: auto;
+  width: auto;
+  border-radius: 20px;
+  box-shadow: rgb(214, 214, 214) 0px 5px 10px 2px;
+  margin-bottom: 2em;
+  padding: 2em;
+}
+
+.card-header-red{
+  color: rgb(194, 6, 6);
+  font-weight: bold;
+}
+
+.red-point:before{
+  content: '';
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: rgb(194, 6, 6);
+  margin-right: 0.5em;
+  border-radius: 50%;
+}
+
+.card-header-green{
+  color: rgb(3, 118, 11);
+  font-weight: bold;
+}
+
+.green-point:before{
+  content: '';
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: rgb(3, 118, 11);
+  margin-right: 0.5em;
+  border-radius: 50%;
+}
+
+.card-list-red, .card-list-green{
+  margin: 1em;
+  line-height: 2em;
+}
+
+
+@media only screen and (min-width: 700px){
+  .card-container{
+    top: 40%;
+  }
+  .vision{
+    text-align: center;
+    font-size: 1.1em;
+  }
+}
+
+@media only screen and (min-width: 900px){
+  .card-container{
+    top: 30%;
+    height: 80%;
+  }
+  .card-list-green li, .card-list-red li{
+    font-size: 1.2em;
+  }
+}
+
+@media only screen and (min-width: 1024px){
+  .card-container{
+    top: 35%;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .card{
+    width: 40%;
+  }
+  .card-list-green, .card-list-red{
+    line-height: 3em;
+  }
+}
+
+
+
 
 @-webkit-keyframes moveCrane {
   0%, 20% {
