@@ -528,6 +528,12 @@ body {
   .card-list-green li, .card-list-red li{
     font-size: 1.2em;
   }
+  .banner-container{
+    top: 20%;
+  }
+  .footer-container{
+    top: 20%;
+  }
 }
 
 @media only screen and (min-width: 1024px){
